@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using AngularJS</title>
+    </head>
+    <body ng-app="myApp" ng-clear>
+        <div ng-app="myApp" ng-controller="formCtrl">
+			First Name: <input ng-model="firstName"><br>
+			Last Name: <input ng-model="lastName"><br>
+			Color: <input ng-model="colr"><br>
+			Age: <input ng-model="age"><br>
+			Sign: <input type="text" ng-model="sign">
+			<br>
+			Full Name: {{firstName + " " + lastName}}<br>
+			Color: {{colr}}<br>
+			Age: {{age}}<br>
+			Astrological Sign: {{sign}}
+		</div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script type="text/javascript" src="controller.js"></script>
+    </body>
+</html>
